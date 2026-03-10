@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Linnenbank | Senior IT & Cloud Engineer</title>
+    <style>
+        :root {
+            --primary-color: #004d99;
+            --secondary-color: #0078d4;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        header h2 {
+            margin: 10px 0 25px;
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #e0e0e0;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .contact-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.7);
+            border-radius: 25px; 
+            transition: background 0.3s, color 0.3s, border-color 0.3s;
+            font-size: 0.95rem;
+            display: inline-block;
+        }
+
+        .contact-links a:hover {
+            background: #fff;
+            color: var(--primary-color);
+            border-color: #fff;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 2.5rem auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        section h3 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.7rem;
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.15rem;
+            color: var(--secondary-color);
+        }
+
+        .job-date {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .other-jobs {
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: var(--bg-color);
+            color: var(--secondary-color);
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header h2 { font-size: 1.1rem; }
+            .profile-pic { width: 120px; height: 120px; }
+            section { padding: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="cvfoto.jpg" alt="Tom Linnenbank - Senior IT & Cloud Engineer" class="profile-pic">
+        
+        <h1>Tom Linnenbank</h1>
+        <h2>Senior Modern Workplace & Cloud Engineer</h2>
+        
+        <div class="contact-links">
+            <a href="mailto:tom@linnenbank.info">tom@linnenbank.info</a>
+            <a href="tel:+31646027722">+31 6 4602 7722</a>
+            <a href="https://www.linkedin.com/in/tom-linnenbank/" target="_blank">LinkedIn</a>
+            <a href="CV_Tom_Linnenbank.pdf" target="_blank">Download CV (PDF)</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="over-mij">
+            <h3>Profiel</h3>
+            <p>
+                Met ruim 18 jaar ervaring in enterprise IT-omgevingen ben ik een gedreven IT Engineer met een absolute passie voor cloud-oplossingen en procesautomatisering. In 2023 is via een onafhankelijk e-assessment mijn <strong>HBO werk- en denkniveau</strong> formeel vastgesteld. 
+            </p>
+            <p>
+                Als engineer sta ik bekend om mijn bedachtzame en zorgvuldige aanpak; ik overzie de complexe impact van wijzigingen in omgevingen met duizenden gebruikers voordat ik handel. Daarnaast ben ik een vasthoudende teamspeler die er voldoening uit haalt om repetitieve, handmatige taken te elimineren (via PowerShell en het Power Platform), zodat collega's efficiënter en veiliger kunnen werken.
+            </p>
+            <div class="tag-container">
+                <span class="tag">Microsoft 365</span>
+                <span class="tag">Azure</span>
+                <span class="tag">Device Management & Packaging</span>
+                <span class="tag">Power Automate & PowerApps</span>
+                <span class="tag">PowerShell</span>
+                <span class="tag">Agile / Scrum Master</span>
+                <span class="tag">ITSM / ISO27001</span>
+            </div>
+        </section>
+
+        <section id="werkervaring">
+            <h3>Werkervaring</h3>
+            
+            <div class="job">
+                <div class="job-title">IT Engineer - Productivity 365</div>
+                <span class="job-date">ASN Bank (en voorgangers) | jan 2020 - heden</span>
+                <ul>
+                    <li><strong>Automatisering:</strong> Minimaliseren van repetitieve taken door geautomatiseerde oplossingen via het Power Platform. IAM-processen teruggebracht van meerdere dagen naar maximaal 30 minuten.</li>
+                    <li><strong>Migratie & Beheer:</strong> Succesvolle migratie van verouderde Fileclusters naar nieuwe Fileservers (terabytes aan data zonder downtime) en implementatie van de 'veilig mailen' (Bastion365) oplossing voor 6.000 medewerkers.</li>
+                    <li><strong>Agile / Scrum:</strong> Vervullen van de Scrum Master rol binnen een multidisciplinair team. Faciliteren van retrospectives en nauwe samenwerking met Product Owners.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 25px;">
+                <div class="job-title">IT Engineer - Persoons en locatiegebonden middelen</div>
+                <span class="job-date">ASN Bank (en voorgangers) | aug 2018 - dec 2019</span>
+                <ul>
+                    <li><strong>Technisch Advies & Consultancy:</strong> Gediend als technisch adviseur bij de inrichting van nieuwe SNS-winkelformules. Verantwoordelijk voor de vertaalslag van businesswensen naar de technische haalbaarheid van locatiegebonden IT-middelen (zoals narrowcasting en werkpleksystemen).</li>
+                    <li><strong>Mobile Device Management:</strong> Verantwoordelijk voor de selectie van veilige mobiele apparatuur (waaronder Samsung Knox). Zelfstandig ontwerpen, bouwen en beheren van de complete BlackBerry MAM infrastructuur voor de veilige uitgifte van toestellen.</li>
+                    <li><strong>Moderne Vergaderoplossingen:</strong> Leiden van leverancierstrajecten voor de selectie van nieuwe vergadermiddelen (o.a. Microsoft Teams en beeldbellen), inclusief de volledige technische configuratie en voorbereiding voor de landelijke uitrol.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 25px;">
+                <div class="job-title">Citrix Desktop Administrator / Werkplek Services</div>
+                <span class="job-date">ASN Bank (en voorgangers) | apr 2009 - aug 2018</span>
+                <ul>
+                    <li>Beheer, onderhoud en applicatie-packaging voor een complexe virtuele desktop-omgeving (Citrix Provisioning) voor 6.000 medewerkers.</li>
+                    <li>Uitvoeren van grootschalige upgrades en het waarborgen van continuïteit binnen de streng gereguleerde financiële sector.</li>
+                </ul>
+            </div>
+
+            <div class="other-jobs">
+                <h3>Overige Werkervaring</h3>
+                
+                <div class="job">
+                    <div class="job-title">Servicedesk Medewerker</div>
+                    <span class="job-date">ASN Bank | mei 2007 - apr 2009</span>
+                    <p>Verantwoordelijk voor de eerste- en tweedelijns IT-ondersteuning voor de gehele organisatie. Een fundamentele rol waar ik de basis van IT Service Management in de praktijk leerde.</p>
+                </div>
+
+                <div class="job" style="margin-top: 20px;">
+                    <div class="job-title">Oprichter / Zelfstandig Ondernemer</div>
+                    <span class="job-date">Eigen IT-bedrijf | 2004 - 2007</span>
+                    <p>Ondernemerschap getoond door het bouwen, repareren en verkopen van computersystemen en hardware aan zowel particuliere als zakelijke klanten.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="opleidingen">
+            <h3>Opleidingen & Certificeringen</h3>
+            
+            <p><strong>Formeel Niveau (Aangetoond)</strong></p>
+            <ul>
+                <li><strong>2023</strong> | HBO werk- en denkniveau (Onafhankelijk e-assessment cognitieve capaciteiten)</li>
+            </ul>
+
+            <p><strong>Microsoft Cloud, AI & Security</strong></p>
+            <ul>
+                <li><strong>2024</strong> | Microsoft 365 Certified: Fundamentals (MS-900)</li>
+                <li><strong>2023</strong> | Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+                <li><strong>2023</strong> | Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</li>
+                <li><strong>2021</strong> | Microsoft 365 Certified: Teams Administrator Associate (MS-700)</li>
+            </ul>
+
+            <p><strong>Processen, Security & Projectmanagement</strong></p>
+            <ul>
+                <li><strong>2019</strong> | Professional Scrum Master I (PSM I)</li>
+                <li><strong>2016</strong> | IT Management Foundation (ITMF) - <em>EXIN</em></li>
+                <li><strong>2015</strong> | PRINCE2® Foundation Certificate</li>
+                <li><strong>2014</strong> | Infrastructure Management Foundation (IMF) - <em>EXIN</em></li>
+                <li><strong>2013</strong> | Information Security Foundation based on ISO/IEC 27001 (ISFS) - <em>EXIN</em></li>
+                <li><strong>2013</strong> | ITIL® Foundation Certificate in IT Service Management - <em>EXIN</em></li>
+                <li><strong>2013</strong> | Informatietechnologie Foundation & Professional Communications Foundation - <em>EXIN</em></li>
+            </ul>
+
+            <p><strong>Gevolgde Technische Trainingen</strong></p>
+            <ul>
+                <li><strong>2026</strong> | Microsoft Azure AI Fundamentals (AI-900)</li>
+                <li><strong>2025</strong> | Power Platform Developer (PL-400)</li>
+                <li><strong>2025</strong> | Power Platform Functional Consultant (PL-200)</li>
+                <li><strong>2023</strong> | PowerShell Advanced</li>
+                <li><strong>2017</strong> | PowerShell Training</li>
+            </ul>
+        </section>
+
+        <section id="nevenactiviteiten">
+            <h3>Nevenactiviteiten</h3>
+            <div class="job-title">Vrijwilliger, Bestuurslid & Teamleider</div>
+            <span class="job-date">Scouting Venray | 2003 - heden</span>
+            <p>Ruim 20 jaar actief betrokken bij het coachen van jeugdgroepen, organiseren van projecten en financieel beheer (penningmeester). Een onafhankelijk bewijs van mijn loyale, meegaande en proactieve teamgeest.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tom Linnenbank. Hosted with ❤️.</p>
+    </footer>
+
+</body>
+</html>
