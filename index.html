@@ -197,7 +197,7 @@
         @media print {
             body { 
                 background-color: #fff; 
-                font-size: 11pt; /* Beter leesbaar op papier/PDF */
+                font-size: 11pt; 
             }
             header { 
                 padding: 2rem 0 1rem 0; 
@@ -209,10 +209,8 @@
             header h2 { color: #333; margin-bottom: 10px; }
             .profile-pic { width: 100px; height: 100px; border: 3px solid var(--primary-color); }
             
-            /* Verberg de knoppen tijdens het printen */
             .contact-links a { display: none; }
             
-            /* Toon alleen platte tekst voor contactgegevens op de PDF */
             .contact-links::after {
                 content: "📍 Venray | ✉️ tom@linnenbank.info | 📞 +31 6 4602 7722 | 🌐 cv.linnenbank.info";
                 display: block;
@@ -220,20 +218,19 @@
                 margin-top: 15px;
                 color: #333;
             }
-            .location-badge { display: none; } /* Verberg de originele badge op de PDF */
+            .location-badge { display: none; } 
 
             .container { max-width: 100%; margin: 0; padding: 0; }
             section { 
                 box-shadow: none; 
                 padding: 0; 
                 margin-bottom: 1.5rem; 
-                page-break-inside: avoid; /* Voorkomt dat een blok doormidden breekt op een nieuwe pagina */
+                page-break-inside: avoid; 
             }
             section h3 { border-bottom: 2px solid var(--primary-color); }
             .tag { border: 1px solid #ccc; color: #000; background: transparent; }
-            footer { display: none; } /* Geen footer op de PDF */
+            footer { display: none; } 
             
-            /* Forceer achtergrondkleuren (voor recruiters die dat aan hebben staan) */
             * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
         }
     </style>
@@ -380,10 +377,30 @@
         </section>
 
         <section id="nevenactiviteiten">
-            <h3>Nevenactiviteiten</h3>
-            <div class="job-title">Vrijwilliger, Bestuurslid & Teamleider</div>
-            <span class="job-date">Scouting Venray | 2003 - heden</span>
-            <p>Ruim 20 jaar actief betrokken bij het coachen van jeugdgroepen, organiseren van projecten en financieel beheer (penningmeester). Een onafhankelijk bewijs van mijn loyale, meegaande en proactieve teamgeest.</p>
+            <h3>Nevenactiviteiten & Vrijwilligerswerk</h3>
+            
+            <div class="job">
+                <div class="job-title">Ontwikkelaar Power Platform & High Tech Team (Vrijwilliger)</div>
+                <span class="job-date">Intercamp (Internationaal Scoutingkamp) | Heden</span>
+                <ul>
+                    <li><strong>Complexe Kampadministratie:</strong> Zelfstandig ontwikkelen en beheren van een uitgebreide PowerApp voor de registratie van stafleden (IST'ers) en deelnemende groepen, inclusief betalings- en taakregistratie.</li>
+                    <li><strong>Keuken & Logistiek:</strong> Ontwikkelen van een scan-module in de PowerApp om via badges het maaltijdgebruik van stafleden bij te houden (ca. 300 personen per maaltijdshift).</li>
+                    <li><strong>Geautomatiseerde Communicatie:</strong> Implementeren van een in- en uitcheckmodule gekoppeld aan gerichte, automatische communicatie (via E-mail en WhatsApp API) naar specifieke groepen of taakverdelingen.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 25px;">
+                <div class="job-title">Vrijwilliger, Bestuurslid & Teamleider</div>
+                <span class="job-date">Scouting De Peelspeurders (Venray) | 2003 - heden</span>
+                <p>Ruim 20 jaar actief betrokken bij het coachen van jeugdgroepen, organiseren van projecten en financieel beheer (penningmeester). Een onafhankelijk bewijs van mijn loyale, meegaande en proactieve teamgeest.</p>
+            </div>
+        </section>
+
+        <section id="persoonlijk">
+            <h3>Persoonlijk & Interesses</h3>
+            <p>
+                Naast mijn passie voor cloud-infrastructuur en automatisering, zorg ik graag voor een goede fysieke en mentale balans. Om fit te blijven zwem ik tweemaal per week. Thuis vind ik mijn ontspanning als hobbykok achter mijn Kamado BBQ; hier neem ik graag de tijd om uitgebreid te koken voor familie en vrienden. Daarnaast maak ik samen met mijn vrouw Linda graag mooie reizen, waarbij we de wereld het liefst ook onder water verkennen tijdens het scubaduiken. 
+            </p>
         </section>
 
     </div>
@@ -394,6 +411,3 @@
 
 </body>
 </html>
-
-
-
