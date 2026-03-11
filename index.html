@@ -228,46 +228,66 @@
             .lang-switcher { top: 15px; right: 15px; }
         }
 
-        /* --- PRINT STYLES VOOR PDF EXPORT --- */
+/* --- PRINT STYLES VOOR PDF EXPORT --- */
+        @page {
+            size: A4;
+            margin: 0; /* Dit verwijdert dwingend de URL's en datums (kop/voetteksten) van de browser */
+        }
+
         @media print {
             body { 
-                background-color: #fff; 
+                background-color: #fff !important; 
                 font-size: 11pt; 
+                padding: 1.5cm 2cm; /* Dit brengt de witruimte terug op het papier, omdat @page margin nu 0 is */
+                -webkit-print-color-adjust: exact !important; /* Forceert achtergrondkleuren in Chrome/Edge/Safari */
+                print-color-adjust: exact !important; /* Forceert achtergrondkleuren in Firefox */
             }
-            header { 
-                padding: 2rem 0 1rem 0; 
-                background: transparent; 
-                color: #000; 
-                border-bottom: 2px solid var(--primary-color);
-            }
-            header h1 { color: var(--primary-color); }
-            header h2 { color: #333; margin-bottom: 10px; }
-            .profile-pic { width: 100px; height: 100px; border: 3px solid var(--primary-color); }
             
-            .contact-links a { display: none; }
-            .lang-switcher { display: none; } /* Verbergt de NL/EN knoppen op de PDF */
+            header { 
+                padding: 0 0 1rem 0; 
+                background: transparent !important; 
+                color: #000 !important; 
+                border-bottom: 2px solid var(--primary-color) !important;
+            }
+            header h1 { color: var(--primary-color) !important; margin-top: 0; }
+            header h2 { color: #333 !important; margin-bottom: 10px; }
+            .profile-pic { width: 100px; height: 100px; border: 3px solid var(--primary-color) !important; }
+            
+            .contact-links a { display: none !important; }
+            .lang-switcher { display: none !important; } 
             
             .contact-links::after {
-                content: "📍 Venray | ✉️ tom@linnenbank.info | 📞 +31 6 4602 7722 | 🌐 cv.linnenbank.info";
+                content: "📍 Venray, NL | ✉️ tom@linnenbank.info | 📞 +31 6 4602 7722 | 🌐 cv.linnenbank.info";
                 display: block;
                 font-weight: bold;
                 margin-top: 15px;
-                color: #333;
+                color: #333 !important;
             }
-            .location-badge { display: none; } 
+            .location-badge { display: none !important; } 
 
-            .container { max-width: 100%; margin: 0; padding: 0; }
+            .container { max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
             section { 
-                box-shadow: none; 
-                padding: 0; 
-                margin-bottom: 1.5rem; 
+                box-shadow: none !important; 
+                padding: 0 !important; 
+                margin-bottom: 1.5rem !important; 
                 page-break-inside: avoid; 
             }
-            section h3 { border-bottom: 2px solid var(--primary-color); }
-            .tag { border: 1px solid #ccc; color: #000; background: transparent; }
-            footer { display: none; } 
+            section h3 { border-bottom: 2px solid var(--primary-color) !important; }
             
-            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            /* Zorgt dat de tags hun styling behouden */
+            .tag { 
+                border: 1px solid #ccc !important; 
+                color: #000 !important; 
+                background: #f4f7f6 !important; 
+            }
+            
+            /* Grijze achtergrond voor de blockquotes forceren */
+            blockquote {
+                background: #f9f9f9 !important;
+                border-left-color: var(--secondary-color) !important;
+            }
+
+            footer { display: none !important; } 
         }
     </style>
 </head>
