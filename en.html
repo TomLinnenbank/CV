@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Linnenbank | IT Engineer & Modern Workplace Specialist</title>
+    <style>
+        :root {
+            --primary-color: #004d99;
+            --secondary-color: #0078d4;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        header h2 {
+            margin: 10px 0 25px;
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #e0e0e0;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.7);
+            border-radius: 25px; 
+            transition: background 0.3s, color 0.3s, border-color 0.3s;
+            font-size: 0.95rem;
+            display: inline-block;
+        }
+
+        .contact-links a:hover {
+            background: #fff;
+            color: var(--primary-color);
+            border-color: #fff;
+        }
+
+        /* Styling voor de actieve taalknop */
+        .lang-active {
+            background: #fff !important;
+            color: var(--primary-color) !important;
+            border-color: #fff !important;
+            font-weight: bold;
+        }
+
+        .location-badge {
+            color: #fff;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            font-size: 0.95rem;
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 2.5rem auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        section h3 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.7rem;
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.15rem;
+            color: var(--secondary-color);
+        }
+
+        .job-date {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .other-jobs {
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: var(--bg-color);
+            color: var(--secondary-color);
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+            font-weight: 600;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 20px;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #555;
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .review-author {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header h2 { font-size: 1.1rem; }
+            .profile-pic { width: 120px; height: 120px; }
+            section { padding: 1.8rem; }
+        }
+
+        /* --- PRINT STYLES VOOR PDF EXPORT --- */
+        @media print {
+            body { 
+                background-color: #fff; 
+                font-size: 11pt; 
+            }
+            header { 
+                padding: 2rem 0 1rem 0; 
+                background: transparent; 
+                color: #000; 
+                border-bottom: 2px solid var(--primary-color);
+            }
+            header h1 { color: var(--primary-color); }
+            header h2 { color: #333; margin-bottom: 10px; }
+            .profile-pic { width: 100px; height: 100px; border: 3px solid var(--primary-color); }
+            
+            .contact-links a { display: none; }
+            .lang-switcher { display: none; } 
+            
+            .contact-links::after {
+                content: "📍 Venray | ✉️ tom@linnenbank.info | 📞 +31 6 4602 7722 | 🌐 cv.linnenbank.info/en.html";
+                display: block;
+                font-weight: bold;
+                margin-top: 15px;
+                color: #333;
+            }
+            .location-badge { display: none; } 
+
+            .container { max-width: 100%; margin: 0; padding: 0; }
+            section { 
+                box-shadow: none; 
+                padding: 0; 
+                margin-bottom: 1.5rem; 
+                page-break-inside: avoid; 
+            }
+            section h3 { border-bottom: 2px solid var(--primary-color); }
+            .tag { border: 1px solid #ccc; color: #000; background: transparent; }
+            footer { display: none; } 
+            
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="cvFoto.png" alt="Tom Linnenbank - Senior IT & Cloud Engineer" class="profile-pic">
+        
+        <h1>Tom Linnenbank</h1>
+        <h2>Senior IT Engineer | Power Platform & Automation, Modern Workplace | Specialist in Microsoft 365 & Azure</h2>
+        
+        <div class="contact-links">
+            <span class="location-badge">📍 Venray, The Netherlands</span>
+            <span class="lang-switcher">
+                <a href="index.html">NL</a>
+                <a href="en.html" class="lang-active">EN</a>
+            </span>
+            <a href="mailto:tom@linnenbank.info">tom@linnenbank.info</a>
+            <a href="tel:+31646027722">+31 6 4602 7722</a>
+            <a href="https://www.linkedin.com/in/tom-linnenbank/" target="_blank">LinkedIn</a>
+            <a href="#" onclick="window.print(); return false;">Save as PDF</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="profile">
+            <h3>Profile</h3>
+            <p>
+                With over 18 years of experience in enterprise IT environments, I am a passionate IT Engineer with a strong focus on cloud solutions and process automation. In 2023, my <strong>Bachelor's working and thinking level (HBO)</strong> was formally validated through an independent cognitive e-assessment.
+            </p>
+            <p>
+                As an engineer, I am known for my thoughtful and meticulous approach; I carefully assess the complex impact of changes in environments with thousands of users before taking action. Furthermore, I am a persistent team player who finds great satisfaction in eliminating repetitive, manual tasks (utilizing PowerShell and the Power Platform), enabling colleagues to work more efficiently and securely.
+            </p>
+            
+            <p><strong>Availability:</strong> 32 - 36 hours per week (4 days)</p>
+            <p><strong>Languages:</strong> Dutch (Native) | English (Excellent) | German (Good speaking and listening skills)</p>
+
+            <div class="tag-container">
+                <span class="tag">Microsoft 365</span>
+                <span class="tag">Power Automate & PowerApps</span>
+                <span class="tag">Azure</span>
+                <span class="tag">Device Management</span>
+                <span class="tag">PowerShell</span>
+                <span class="tag">Agile / Scrum Master</span>
+                <span class="tag">ITSM / ISO27001</span>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h3>What Others Say</h3>
+            
+            <blockquote>
+                "Tom, you are a knowledgeable and technical engineer with a strong focus on automation. You have effectively applied your knowledge and skills in this area within your work."
+                <span class="review-author">- Manager, ASN Bank (Performance Review)</span>
+            </blockquote>
+
+            <blockquote>
+                "The examples you provide clearly show what is possible with automation and the concrete benefits it delivers to the company."
+                <span class="review-author">- Manager, ASN Bank (Performance Review)</span>
+            </blockquote>
+        </section>
+
+        <section id="experience">
+            <h3>Work Experience</h3>
+            
+            <div class="job">
+                <div class="job-title">IT Engineer - Productivity 365</div>
+                <span class="job-date">ASN Bank (and predecessors) | Jan 2020 - Present</span>
+                <ul>
+                    <li><strong>Automation:</strong> Minimizing repetitive tasks through automated solutions via the Power Platform. Reduced complex IAM processes from several days to a maximum of 30 minutes.</li>
+                    <li><strong>Migration & Management:</strong> Successful migration of legacy File Clusters to new File Servers (terabytes of data with zero downtime) and implementation of the 'secure email' (Bastion365) solution for 6,000 employees.</li>
+                    <li><strong>Agile / Scrum:</strong> Fulfilling the Scrum Master role within a multidisciplinary team. Facilitating retrospectives and collaborating closely with Product Owners.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 25px;">
+                <div class="job-title">IT Engineer - Personal & Location-based Resources</div>
+                <span class="job-date">ASN Bank (and predecessors) | Aug 2018 - Dec 2019</span>
+                <ul>
+                    <li><strong>Technical Advice & Consultancy:</strong> Served as a technical advisor for the setup of new SNS store concepts. Responsible for translating business requirements into technical feasibility for location-based IT resources (e.g., narrowcasting and workplace systems).</li>
+                    <li><strong>Mobile Device Management:</strong> Responsible for the selection of secure mobile devices (including Samsung Knox). Independently designed, built, and managed the complete BlackBerry MAM infrastructure for the secure distribution of devices.</li>
+                    <li><strong>Modern Meeting Solutions:</strong> Led vendor selection processes for new meeting resources (e.g., Microsoft Teams and video calling), including the full technical configuration and preparation for national rollout.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 25px;">
+                <div class="job-title">Citrix Desktop Administrator / Workplace Services</div>
+                <span class="job-date">ASN Bank (and predecessors) | Apr 2009 - Aug 2018</span>
+                <ul>
+                    <li>Management, maintenance, and application packaging for a complex virtual desktop environment (Citrix Provisioning) for 6,000 employees.</li>
+                    <li>Executing large-scale upgrades and ensuring continuity within the highly regulated financial sector.</li>
+                </ul>
+            </div>
+
+            <div class="other-jobs">
+                <h3>Other Work Experience</h3>
+                
+                <div class="job">
+                    <div class="job-title">IT Service Desk Employee</div>
+                    <span class="job-date">ASN Bank | May 2007 - Apr 2009</span>
+                    <p>Responsible for 1st and 2nd line IT support for the entire organization. A fundamental role where I learned the basics of IT Service Management in practice.</p>
+                </div>
+
+                <div class="job" style="margin-top: 20px;">
+                    <div class="job-title">Founder / Independent Entrepreneur</div>
+                    <span class="job-date">Own IT Company | 2004 - 2007</span>
+                    <p>Demonstrated entrepreneurship by building, repairing, and selling computer systems and hardware to both private and business clients.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h3>Education & Certifications</h3>
+            
+            <p><strong>Formal Level (Proven)</strong></p>
+            <ul>
+                <li><strong>2023</strong> | Bachelor's working and thinking level (Independent e-assessment of cognitive capabilities)</li>
+            </ul>
+
+            <p><strong>Microsoft Cloud, AI & Security</strong></p>
+            <ul>
+                <li><strong>2024</strong> | Microsoft 365 Certified: Fundamentals (MS-900)</li>
+                <li><strong>2023</strong> | Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+                <li><strong>2023</strong> | Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</li>
+                <li><strong>2021</strong> | Microsoft 365 Certified: Teams Administrator Associate (MS-700)</li>
+            </ul>
+
+            <p><strong>Processes, Security & Project Management</strong></p>
+            <ul>
+                <li><strong>2019</strong> | Professional Scrum Master I (PSM I)</li>
+                <li><strong>2016</strong> | IT Management Foundation (ITMF) - <em>EXIN</em></li>
+                <li><strong>2015</strong> | PRINCE2® Foundation Certificate</li>
+                <li><strong>2014</strong> | Infrastructure Management Foundation (IMF) - <em>EXIN</em></li>
+                <li><strong>2013</strong> | Information Security Foundation based on ISO/IEC 27001 (ISFS) - <em>EXIN</em></li>
+                <li><strong>2013</strong> | ITIL® Foundation Certificate in IT Service Management - <em>EXIN</em></li>
+                <li><strong>2013</strong> | Information Technology Foundation & Professional Communications Foundation - <em>EXIN</em></li>
+            </ul>
+
+            <p><strong>Technical Training</strong></p>
+            <ul>
+                <li><strong>2026</strong> | Microsoft Azure AI Fundamentals (AI-900)</li>
+                <li><strong>2025</strong> | Power Platform Developer (PL-400)</li>
+                <li><strong>2025</strong> | Power Platform Functional Consultant (PL-200)</li>
+                <li><strong>2023</strong> | PowerShell Advanced</li>
+                <li><strong>2017</strong> | PowerShell Training</li>
+            </ul>
+        </section>
+
+        <section id="extracurricular">
+            <h3>Volunteering & Extracurricular Activities</h3>
+            
+            <div class="job">
+                <div class="job-title">Power Platform Developer & High Tech Team (Volunteer)</div>
+                <span class="job-date">Intercamp (International Scouting Camp) | Present</span>
+                <ul>
+                    <li><strong>Complex Camp Administration:</strong> Independently developed and currently managing a comprehensive PowerApp for the registration of staff members (IST) and participating groups, including payment tracking and task assignment.</li>
+                    <li><strong>Kitchen & Logistics:</strong> Developed a scan module within the PowerApp to track staff meal consumption via badges (approx. 300 people per meal shift).</li>
+                    <li><strong>Automated Communication:</strong> Implemented a check-in/out module linked to targeted, automated communication (via Email and WhatsApp API) to specific groups or task forces.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 25px;">
+                <div class="job-title">Volunteer, Board Member & Team Leader</div>
+                <span class="job-date">Scouting De Peelspeurders (Venray) | 2003 - Present</span>
+                <p>Actively involved for over 20 years in coaching youth groups, organizing projects, and financial management (treasurer). Independent proof of my loyal, accommodating, and proactive team spirit.</p>
+            </div>
+        </section>
+
+        <section id="personal">
+            <h3>Personal & Interests</h3>
+            <p>
+                Alongside my passion for cloud infrastructure and automation, I value a healthy physical and mental balance. To stay fit, I swim twice a week. At home, I find relaxation as an amateur chef behind my Kamado BBQ, taking the time to cook extensively for family and friends. Furthermore, my wife Linda and I love to travel the world, preferably exploring it underwater while scuba diving.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tom Linnenbank. Hosted with ❤️ and Cloud Technology in Azure.</p>
+    </footer>
+
+</body>
+</html>
