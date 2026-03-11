@@ -32,7 +32,40 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
         }
+
+        /* --- STYLING LANGUAGE SWITCHER --- */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-switcher a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 12px;
+            border: 1px solid rgba(255,255,255,0.7);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .lang-switcher a:hover {
+            background: #fff;
+            color: var(--primary-color);
+        }
+
+        .lang-active {
+            background: #fff !important;
+            color: var(--primary-color) !important;
+            border-color: #fff !important;
+            font-weight: bold;
+        }
+        /* ---------------------------------- */
 
         .profile-pic {
             width: 150px;
@@ -81,14 +114,6 @@
             background: #fff;
             color: var(--primary-color);
             border-color: #fff;
-        }
-
-        /* Styling voor de actieve taalknop */
-        .lang-active {
-            background: #fff !important;
-            color: var(--primary-color) !important;
-            border-color: #fff !important;
-            font-weight: bold;
         }
 
         .location-badge {
@@ -199,9 +224,10 @@
             header h2 { font-size: 1.1rem; }
             .profile-pic { width: 120px; height: 120px; }
             section { padding: 1.8rem; }
+            .lang-switcher { top: 15px; right: 15px; }
         }
 
-        /* --- PRINT STYLES VOOR PDF EXPORT --- */
+        /* --- PRINT STYLES --- */
         @media print {
             body { 
                 background-color: #fff; 
@@ -221,7 +247,7 @@
             .lang-switcher { display: none; } 
             
             .contact-links::after {
-                content: "📍 Venray | ✉️ tom@linnenbank.info | 📞 +31 6 4602 7722 | 🌐 cv.linnenbank.info/en.html";
+                content: "📍 Venray, NL | ✉️ tom@linnenbank.info | 📞 +31 6 4602 7722 | 🌐 cv.linnenbank.info/en.html";
                 display: block;
                 font-weight: bold;
                 margin-top: 15px;
@@ -247,6 +273,11 @@
 <body>
 
     <header>
+        <div class="lang-switcher">
+            <a href="index.html">NL</a>
+            <a href="en.html" class="lang-active">EN</a>
+        </div>
+
         <img src="cvFoto.png" alt="Tom Linnenbank - Senior IT & Cloud Engineer" class="profile-pic">
         
         <h1>Tom Linnenbank</h1>
@@ -254,10 +285,6 @@
         
         <div class="contact-links">
             <span class="location-badge">📍 Venray, The Netherlands</span>
-            <span class="lang-switcher">
-                <a href="index.html">NL</a>
-                <a href="en.html" class="lang-active">EN</a>
-            </span>
             <a href="mailto:tom@linnenbank.info">tom@linnenbank.info</a>
             <a href="tel:+31646027722">+31 6 4602 7722</a>
             <a href="https://www.linkedin.com/in/tom-linnenbank/" target="_blank">LinkedIn</a>
