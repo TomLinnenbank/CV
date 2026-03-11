@@ -35,7 +35,6 @@
             position: relative;
         }
 
-        /* --- STYLING LANGUAGE SWITCHER --- */
         .lang-switcher {
             position: absolute;
             top: 20px;
@@ -65,7 +64,6 @@
             border-color: #fff !important;
             font-weight: bold;
         }
-        /* ---------------------------------- */
 
         .profile-pic {
             width: 150px;
@@ -227,19 +225,19 @@
             .lang-switcher { top: 15px; right: 15px; }
         }
 
-/* --- PRINT STYLES VOOR PDF EXPORT --- */
+        /* --- PRINT STYLES --- */
         @page {
             size: A4;
-            margin: 0; /* Dit verwijdert dwingend de URL's en datums (kop/voetteksten) van de browser */
+            margin: 0; 
         }
 
         @media print {
             body { 
                 background-color: #fff !important; 
                 font-size: 11pt; 
-                padding: 1.5cm 2cm; /* Dit brengt de witruimte terug op het papier, omdat @page margin nu 0 is */
-                -webkit-print-color-adjust: exact !important; /* Forceert achtergrondkleuren in Chrome/Edge/Safari */
-                print-color-adjust: exact !important; /* Forceert achtergrondkleuren in Firefox */
+                padding: 1.5cm 2cm; 
+                -webkit-print-color-adjust: exact !important; 
+                print-color-adjust: exact !important; 
             }
             
             header { 
@@ -273,14 +271,12 @@
             }
             section h3 { border-bottom: 2px solid var(--primary-color) !important; }
             
-            /* Zorgt dat de tags hun styling behouden */
             .tag { 
                 border: 1px solid #ccc !important; 
                 color: #000 !important; 
                 background: #f4f7f6 !important; 
             }
             
-            /* Grijze achtergrond voor de blockquotes forceren */
             blockquote {
                 background: #f9f9f9 !important;
                 border-left-color: var(--secondary-color) !important;
@@ -341,12 +337,12 @@
             <h3>What Others Say</h3>
             
             <blockquote>
-                "Tom, you are a knowledgeable and technical engineer with a strong focus on automation. You have effectively applied your knowledge and skills in this area within your work."
+                "Tom combines technical depth with a strong eye for automation. He knows how to translate complex processes into smart solutions that immediately save teams time."
                 <span class="review-author">- Manager, ASN Bank (Performance Review)</span>
             </blockquote>
 
             <blockquote>
-                "The examples you provide clearly show what is possible with automation and the concrete benefits it delivers to the company."
+                "What sets Tom apart is that he doesn't just manage systems, but actively looks for ways to make processes smarter and more efficient."
                 <span class="review-author">- Manager, ASN Bank (Performance Review)</span>
             </blockquote>
         </section>
@@ -356,17 +352,17 @@
             
             <div class="job">
                 <div class="job-title">IT Engineer - Productivity 365</div>
-                <span class="job-date">ASN Bank (and predecessors) | Jan 2020 - Present</span>
+                <span class="job-date">ASN Bank (and predecessors) | 's-Hertogenbosch (Hybrid: 3 days remote, 1 day in office) | Jan 2020 - Present</span>
                 <ul>
-                    <li><strong>Automation:</strong> Minimizing repetitive tasks through automated solutions via the Power Platform. Reduced complex IAM processes from several days to a maximum of 30 minutes.</li>
+                    <li><strong>Automation:</strong> Automated manual IT processes using Power Platform and PowerShell, successfully reducing complex IAM processes from several days to a maximum of 30 minutes.</li>
                     <li><strong>Migration & Management:</strong> Successful migration of legacy File Clusters to new File Servers (terabytes of data with zero downtime) and implementation of the 'secure email' (Bastion365) solution for 6,000 employees.</li>
-                    <li><strong>Agile / Scrum:</strong> Fulfilling the Scrum Master role within a multidisciplinary team. Facilitating retrospectives and collaborating closely with Product Owners.</li>
+                    <li><strong>Agile / Scrum:</strong> Fulfilled the Scrum Master role within a multidisciplinary team and facilitated retrospectives to strengthen collaboration and continuous improvement.</li>
                 </ul>
             </div>
 
             <div class="job" style="margin-top: 25px;">
                 <div class="job-title">IT Engineer - Personal & Location-based Resources</div>
-                <span class="job-date">ASN Bank (and predecessors) | Aug 2018 - Dec 2019</span>
+                <span class="job-date">ASN Bank (and predecessors) | 's-Hertogenbosch (Hybrid: 2 days remote, 2 days in office) | Aug 2018 - Dec 2019</span>
                 <ul>
                     <li><strong>Technical Advice & Consultancy:</strong> Served as a technical advisor for the setup of new SNS store concepts. Responsible for translating business requirements into technical feasibility for location-based IT resources (e.g., narrowcasting and workplace systems).</li>
                     <li><strong>Mobile Device Management:</strong> Responsible for the selection of secure mobile devices (including Samsung Knox). Independently designed, built, and managed the complete BlackBerry MAM infrastructure for the secure distribution of devices.</li>
@@ -376,7 +372,7 @@
 
             <div class="job" style="margin-top: 25px;">
                 <div class="job-title">Citrix Desktop Administrator / Workplace Services</div>
-                <span class="job-date">ASN Bank (and predecessors) | Apr 2009 - Aug 2018</span>
+                <span class="job-date">ASN Bank (and predecessors) | 's-Hertogenbosch (Hybrid: 1 day remote, 3 days in office) | Apr 2009 - Aug 2018</span>
                 <ul>
                     <li>Management, maintenance, and application packaging for a complex virtual desktop environment (Citrix Provisioning) for 6,000 employees.</li>
                     <li>Executing large-scale upgrades and ensuring continuity within the highly regulated financial sector.</li>
@@ -388,14 +384,14 @@
                 
                 <div class="job">
                     <div class="job-title">IT Service Desk Employee</div>
-                    <span class="job-date">ASN Bank | May 2007 - Apr 2009</span>
+                    <span class="job-date">ASN Bank | 's-Hertogenbosch (4 days in office) | May 2007 - Apr 2009</span>
                     <p>Responsible for 1st and 2nd line IT support for the entire organization. A fundamental role where I learned the basics of IT Service Management in practice.</p>
                 </div>
 
                 <div class="job" style="margin-top: 20px;">
-                    <div class="job-title">Founder / Independent Entrepreneur</div>
-                    <span class="job-date">Own IT Company | 2004 - 2007</span>
-                    <p>Demonstrated entrepreneurship by building, repairing, and selling computer systems and hardware to both private and business clients.</p>
+                    <div class="job-title">Founder / Independent Entrepreneur (PC Plaza)</div>
+                    <span class="job-date">Nijmegen | 2004 - 2007</span>
+                    <p>Demonstrated entrepreneurship at age 19 by successfully setting up an independent IT company for building, repairing, and selling computer systems and hardware to both private and business clients.</p>
                 </div>
             </div>
         </section>
@@ -403,9 +399,11 @@
         <section id="education">
             <h3>Education & Certifications</h3>
             
-            <p><strong>Formal Level (Proven)</strong></p>
+            <p><strong>Formal Level & Educational Background</strong></p>
             <ul>
-                <li><strong>2023</strong> | Bachelor's working and thinking level (Independent e-assessment of cognitive capabilities)</li>
+                <li><strong>2023</strong> | Bachelor's working and thinking level (Independent cognitive e-assessment, administered by <em>Talent Fit</em>)</li>
+                <li><strong>2002 - 2004</strong> | MBO Level 4 (IT) - <em>Discontinued in year 2 due to the successful launch of my own IT business, PC Plaza.</em></li>
+                <li><strong>1998 - 2002</strong> | Pre-university & Higher General Secondary Education (VWO & HAVO, up to year 4)</li>
             </ul>
 
             <p><strong>Microsoft Cloud, AI & Security</strong></p>
