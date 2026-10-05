@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Linnenbank | IT Engineer & Modern Workplace Specialist</title>
+    <title>Tom Linnenbank | Power Platform Consultant / Developer</title>
     <style>
         :root {
             --primary-color: #004d99;
@@ -13,7 +13,6 @@
             --card-bg: #ffffff;
             --border-color: #e0e0e0;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -22,7 +21,6 @@
             margin: 0;
             padding: 0;
         }
-
         header {
             background: var(--primary-color);
             color: #fff;
@@ -34,7 +32,6 @@
             align-items: center;
             position: relative;
         }
-
         .lang-switcher {
             position: absolute;
             top: 20px;
@@ -42,7 +39,6 @@
             display: flex;
             gap: 10px;
         }
-
         .lang-switcher a {
             color: #fff;
             text-decoration: none;
@@ -52,19 +48,16 @@
             font-size: 0.9rem;
             transition: background 0.3s, color 0.3s;
         }
-
         .lang-switcher a:hover {
             background: #fff;
             color: var(--primary-color);
         }
-
         .lang-active {
             background: #fff !important;
             color: var(--primary-color) !important;
             border-color: #fff !important;
             font-weight: bold;
         }
-
         .profile-pic {
             width: 150px;
             height: 150px;
@@ -74,21 +67,18 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             margin-bottom: 20px;
         }
-
         header h1 {
             margin: 0;
             font-size: 2.8rem;
             letter-spacing: 1px;
             font-weight: 700;
         }
-
         header h2 {
             margin: 10px 0 25px;
             font-weight: 300;
             font-size: 1.3rem;
             color: #e0e0e0;
         }
-
         .contact-links {
             display: flex;
             flex-wrap: wrap;
@@ -96,24 +86,21 @@
             align-items: center;
             gap: 15px;
         }
-
         .contact-links a {
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
             border: 1px solid rgba(255,255,255,0.7);
-            border-radius: 25px; 
+            border-radius: 25px;
             transition: background 0.3s, color 0.3s, border-color 0.3s;
             font-size: 0.95rem;
             display: inline-block;
         }
-
         .contact-links a:hover {
             background: #fff;
             color: var(--primary-color);
             border-color: #fff;
         }
-
         .location-badge {
             color: #fff;
             padding: 10px 20px;
@@ -123,13 +110,11 @@
             background: rgba(255,255,255,0.1);
             display: inline-block;
         }
-
         .container {
             max-width: 950px;
             margin: 2.5rem auto;
             padding: 0 20px;
         }
-
         section {
             background: var(--card-bg);
             padding: 2.5rem;
@@ -137,7 +122,6 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.03);
         }
-
         section h3 {
             color: var(--primary-color);
             border-bottom: 3px solid var(--secondary-color);
@@ -145,41 +129,34 @@
             margin-top: 0;
             font-size: 1.6rem;
         }
-
         .job-title {
             font-weight: bold;
             font-size: 1.15rem;
             color: var(--secondary-color);
         }
-
         .job-date {
             font-style: italic;
             color: #777;
             margin-bottom: 15px;
             display: block;
         }
-
         ul {
             padding-left: 20px;
         }
-
         li {
             margin-bottom: 8px;
         }
-
         .other-jobs {
             margin-top: 2rem;
             border-top: 1px solid var(--border-color);
             padding-top: 1.5rem;
         }
-
         .tag-container {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
             margin-top: 20px;
         }
-
         .tag {
             background: var(--bg-color);
             color: var(--secondary-color);
@@ -189,7 +166,6 @@
             border: 1px solid var(--border-color);
             font-weight: 600;
         }
-
         blockquote {
             border-left: 4px solid var(--secondary-color);
             padding-left: 20px;
@@ -200,7 +176,6 @@
             padding: 15px 20px;
             border-radius: 0 8px 8px 0;
         }
-        
         .review-author {
             font-weight: bold;
             color: var(--primary-color);
@@ -208,7 +183,6 @@
             margin-top: 10px;
             font-style: normal;
         }
-
         footer {
             text-align: center;
             padding: 3rem;
@@ -216,7 +190,6 @@
             font-size: 0.9rem;
             border-top: 1px solid var(--border-color);
         }
-
         @media (max-width: 768px) {
             header h1 { font-size: 2.2rem; }
             header h2 { font-size: 1.1rem; }
@@ -228,31 +201,27 @@
         /* --- PRINT STYLES VOOR PDF EXPORT --- */
         @page {
             size: A4;
-            margin: 0; 
+            margin: 0;
         }
-
         @media print {
-            body { 
-                background-color: #fff !important; 
-                font-size: 11pt; 
-                padding: 1.5cm 2cm; 
-                -webkit-print-color-adjust: exact !important; 
-                print-color-adjust: exact !important; 
+            body {
+                background-color: #fff !important;
+                font-size: 11pt;
+                padding: 1.5cm 2cm;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
-            
-            header { 
-                padding: 0 0 1rem 0; 
-                background: transparent !important; 
-                color: #000 !important; 
+            header {
+                padding: 0 0 1rem 0;
+                background: transparent !important;
+                color: #000 !important;
                 border-bottom: 2px solid var(--primary-color) !important;
             }
             header h1 { color: var(--primary-color) !important; margin-top: 0; }
             header h2 { color: #333 !important; margin-bottom: 10px; }
             .profile-pic { width: 100px; height: 100px; border: 3px solid var(--primary-color) !important; }
-            
             .contact-links a { display: none !important; }
-            .lang-switcher { display: none !important; } 
-            
+            .lang-switcher { display: none !important; }
             .contact-links::after {
                 content: "📍 Venray, NL | ✉️ tom@linnenbank.info | 📞 +31 6 4602 7722 | 🌐 cv.linnenbank.info";
                 display: block;
@@ -260,29 +229,25 @@
                 margin-top: 15px;
                 color: #333 !important;
             }
-            .location-badge { display: none !important; } 
-
+            .location-badge { display: none !important; }
             .container { max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
-            section { 
-                box-shadow: none !important; 
-                padding: 0 !important; 
-                margin-bottom: 1.5rem !important; 
-                page-break-inside: avoid; 
+            section {
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin-bottom: 1.5rem !important;
+                page-break-inside: avoid;
             }
             section h3 { border-bottom: 2px solid var(--primary-color) !important; }
-            
-            .tag { 
-                border: 1px solid #ccc !important; 
-                color: #000 !important; 
-                background: #f4f7f6 !important; 
+            .tag {
+                border: 1px solid #ccc !important;
+                color: #000 !important;
+                background: #f4f7f6 !important;
             }
-            
             blockquote {
                 background: #f9f9f9 !important;
                 border-left-color: var(--secondary-color) !important;
             }
-
-            footer { display: none !important; } 
+            footer { display: none !important; }
         }
     </style>
 </head>
@@ -293,12 +258,9 @@
             <a href="index.html" class="lang-active">NL</a>
             <a href="en.html">EN</a>
         </div>
-
-        <img src="cvFoto.png" alt="Tom Linnenbank - Senior IT & Cloud Engineer" class="profile-pic">
-        
+        <img src="cvFoto.png" alt="Tom Linnenbank - Power Platform Consultant / Developer" class="profile-pic">
         <h1>Tom Linnenbank</h1>
-        <h2>Senior IT Engineer | Power Platform & Automatisering, Modern Workplace | Specialist in Microsoft 365 & Azure</h2>
-        
+        <h2>Power Platform Consultant / Developer | Power Apps, Power Automate & Dataverse | Microsoft 365 & Azure</h2>
         <div class="contact-links">
             <span class="location-badge">📍 Venray</span>
             <a href="mailto:tom@linnenbank.info">tom@linnenbank.info</a>
@@ -309,22 +271,22 @@
     </header>
 
     <div class="container">
-        
+
         <section id="over-mij">
             <h3>Profiel</h3>
             <p>
-                Met ruim 18 jaar ervaring in enterprise IT-omgevingen ben ik een gedreven IT Engineer met een absolute passie voor cloud-oplossingen en procesautomatisering. In 2023 is via een onafhankelijk e-assessment mijn <strong>HBO werk- en denkniveau</strong> formeel vastgesteld. 
+                Met ruim 18 jaar ervaring in enterprise IT-omgevingen ben ik een gedreven IT-professional met een absolute passie voor cloud-oplossingen en procesautomatisering. Sinds september 2026 werk ik als <strong>Power Platform Consultant / Developer bij Phact</strong>, waar ik maatwerkoplossingen met Power Apps, Power Automate en Dataverse ontwerp en bouw voor klanten en voor de eigen organisatie. In 2023 is via een onafhankelijk e-assessment mijn <strong>HBO werk- en denkniveau</strong> formeel vastgesteld.
             </p>
             <p>
                 Als engineer sta ik bekend om mijn bedachtzame en zorgvuldige aanpak; ik overzie de complexe impact van wijzigingen in omgevingen met duizenden gebruikers voordat ik handel. Daarnaast ben ik een vasthoudende teamspeler die er voldoening uit haalt om repetitieve, handmatige taken te elimineren (via PowerShell en het Power Platform), zodat collega's efficiënter en veiliger kunnen werken.
             </p>
-            
             <p><strong>Beschikbaarheid:</strong> 32 - 36 uur per week (4 dagen)</p>
             <p><strong>Talenkennis:</strong> Nederlands (Moedertaal) | Engels (Uitstekend) | Duits (Goede spreek- en luistervaardigheid)</p>
-
             <div class="tag-container">
+                <span class="tag">Power Apps (Canvas)</span>
+                <span class="tag">Power Automate</span>
+                <span class="tag">Dataverse</span>
                 <span class="tag">Microsoft 365</span>
-                <span class="tag">Power Automate & PowerApps</span>
                 <span class="tag">Azure</span>
                 <span class="tag">Device Management</span>
                 <span class="tag">PowerShell</span>
@@ -335,12 +297,10 @@
 
         <section id="reviews">
             <h3>Wat Anderen Zeggen</h3>
-            
             <blockquote>
                 "Tom combineert technische diepgang met een sterk oog voor automatisering. Hij weet complexe processen te vertalen naar slimme oplossingen die teams direct tijd besparen."
                 <span class="review-author">- Leidinggevende, ASN Bank (Eindwaardering)</span>
             </blockquote>
-
             <blockquote>
                 "Wat Tom onderscheidt is dat hij niet alleen systemen beheert, maar actief zoekt naar manieren om processen slimmer en efficiënter te maken."
                 <span class="review-author">- Leidinggevende, ASN Bank (Eindwaardering)</span>
@@ -351,6 +311,17 @@
             <h3>Werkervaring</h3>
 
             <div class="job">
+                <div class="job-title">Microsoft Power Platform Consultant / Developer</div>
+                <span class="job-date">Phact | Venray | sep 2026 - heden</span>
+                <ul>
+                    <li><strong>Klantprojecten:</strong> Ontwerpen en bouwen van canvas apps op Dataverse, waaronder een app voor evenementenplanning en laadlijsten met geautomatiseerde documentgeneratie (Power Automate naar Word/PDF), met klantspecifieke varianten van formulieren.</li>
+                    <li><strong>Interne applicaties:</strong> Samenvoegen van verouderde SharePoint-apps voor klant- en projectbeheer tot één moderne canvas app op Dataverse, opgebouwd met herbruikbare componenten en in de huisstijl van de organisatie.</li>
+                    <li><strong>Proof-of-concepts:</strong> Vertalen van een HTML-demo naar een werkende canvas app, inclusief het opzetten van het Dataverse-datamodel.</li>
+                    <li><strong>Werkwijze:</strong> Bouwen binnen solutions met eigen publishers, modern controls en app-theming volgens vaste ontwikkelstandaarden, in een Agile team.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top: 25px;">
                 <div class="job-title">Change Manager</div>
                 <span class="job-date">BSU | jun 2026 - aug 2026</span>
                 <p>Aangetreden in een nieuwe, binnen de organisatie nog niet eerder ingevulde functie. Gedurende deze periode bleek dat de dagelijkse invulling van de rol vanuit beide kanten niet volledig aansloot bij de vooraf besproken verwachtingen.</p>
@@ -389,13 +360,11 @@
 
             <div class="other-jobs">
                 <h3>Overige Werkervaring</h3>
-                
                 <div class="job">
                     <div class="job-title">Servicedesk Medewerker</div>
                     <span class="job-date">ASN Bank | 's-Hertogenbosch (4 dagen op kantoor) | mei 2007 - apr 2009</span>
                     <p>Verantwoordelijk voor de eerste- en tweedelijns IT-ondersteuning voor de gehele organisatie. Een fundamentele rol waar ik de basis van IT Service Management in de praktijk leerde.</p>
                 </div>
-
                 <div class="job" style="margin-top: 20px;">
                     <div class="job-title">Oprichter / Zelfstandig Ondernemer (PC Plaza)</div>
                     <span class="job-date">Nijmegen | 2004 - 2007</span>
@@ -406,7 +375,7 @@
 
         <section id="opleidingen">
             <h3>Opleidingen & Certificeringen</h3>
-            
+
             <p><strong>Formeel Niveau & Vooropleiding</strong></p>
             <ul>
                 <li><strong>2023</strong> | HBO werk- en denkniveau (Onafhankelijk e-assessment cognitieve capaciteiten, afgenomen door <em>Talent Fit</em>)</li>
@@ -446,7 +415,6 @@
 
         <section id="nevenactiviteiten">
             <h3>Nevenactiviteiten & Vrijwilligerswerk</h3>
-            
             <div class="job">
                 <div class="job-title">Ontwikkelaar Power Platform & High Tech Team (Vrijwilliger)</div>
                 <span class="job-date">Intercamp (Internationaal Scoutingkamp) | Heden</span>
@@ -456,7 +424,6 @@
                     <li><strong>Geautomatiseerde Communicatie:</strong> Implementeren van een in- en uitcheckmodule gekoppeld aan gerichte, automatische communicatie (via E-mail en WhatsApp API) naar specifieke groepen of taakverdelingen.</li>
                 </ul>
             </div>
-
             <div class="job" style="margin-top: 25px;">
                 <div class="job-title">Vrijwilliger, Bestuurslid & Teamleider</div>
                 <span class="job-date">Scouting De Peelspeurders (Venray) | 2003 - heden</span>
@@ -467,7 +434,7 @@
         <section id="persoonlijk">
             <h3>Persoonlijk & Interesses</h3>
             <p>
-                Naast mijn passie voor cloud-infrastructuur en automatisering, zorg ik graag voor een goede fysieke en mentale balans. Om fit te blijven zwem ik tweemaal per week. Thuis vind ik mijn ontspanning als hobbykok achter mijn Kamado BBQ; hier neem ik graag de tijd om uitgebreid te koken voor familie en vrienden. Daarnaast maak ik samen met mijn vrouw Linda graag mooie reizen, waarbij we de wereld het liefst ook onder water verkennen tijdens het scubaduiken. 
+                Naast mijn passie voor cloud-infrastructuur en automatisering, zorg ik graag voor een goede fysieke en mentale balans. Om fit te blijven zwem ik tweemaal per week. Thuis vind ik mijn ontspanning als hobbykok achter mijn Kamado BBQ; hier neem ik graag de tijd om uitgebreid te koken voor familie en vrienden. Daarnaast maak ik samen met mijn vrouw Linda graag mooie reizen, waarbij we de wereld het liefst ook onder water verkennen tijdens het scubaduiken.
             </p>
         </section>
 
